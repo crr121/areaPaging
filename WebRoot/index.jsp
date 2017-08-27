@@ -24,7 +24,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		margin:50px
 	}
 	.pageInfo{
-		width:50%
+		width:50% 
 	}
 	
 	</style>
@@ -39,6 +39,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		    			<th>地址编码</th>
 		    			<th>地址名称</th>
 		    			<th>地址等级</th>
+		    			<th>操作</th>
 		    		</tr>
 		    	</thead>
 		    	<tbody></tbody>
