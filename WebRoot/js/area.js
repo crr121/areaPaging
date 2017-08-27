@@ -1,10 +1,10 @@
 //定义全局变量
-var pageSize = 10,Curpage = 1,pageCount = 0;
+var pageSize = 10,curPage = 1,pageCount = 0;
 window.onload = sendPageAjax;
 
 //发送请求
 function sendPageAjax(){
-	$.post("areaPageServlet",{"pageSize":pageSize,"curPage":Curpage,"random":Math.random()},function(){
+	$.post("AreaPageServlet",{"pageSize":pageSize,"curPage":curPage,"random":Math.random()},function(){
 		//取出pagecount
 		pageCount = data.pageCount;
 		alert(pageCount);

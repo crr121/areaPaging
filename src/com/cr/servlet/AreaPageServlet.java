@@ -49,8 +49,9 @@ public class AreaPageServlet extends HttpServlet {
 		
 		//再将pagecount和area info合并成一个json对象
 		//JSON格式的对象是一个字符串，所以除了pageCount,areaInfo（变量）都是字符串（常量）
-		areaInfo ="{\"pageCount:\"+pageCount+\"pageInfo:\"+areaInfo}";
+		areaInfo = "{\"pageCount\":"+pageCount+",\"pageInfo\":"+areaInfo+"}";
 		
+		System.out.println(areaInfo);
 		//准备好返回的数据还需要利用resp设置返回数据的格式为json格式
 		resp.setContentType("text/json");
 		
